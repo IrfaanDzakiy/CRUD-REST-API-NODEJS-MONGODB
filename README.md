@@ -18,6 +18,9 @@ Please manually add this credential via mongo cli/ mongo compass before starting
     "updatedAt": "2020-12-01T16:45:23.166Z",
     "__v": 0
 }`
+This query is equivalent to Admin with,
+`username : admin
+ password : admin`
 
 ### USER
 `{
@@ -29,6 +32,9 @@ Please manually add this credential via mongo cli/ mongo compass before starting
     "updatedAt": "2020-12-01T16:46:54.014Z",
     "__v": 0
 }`
+This query is equivalent to Admin with,
+`username : irfaan
+ password : 123`
 
 ## TO START
 * `npm install`
