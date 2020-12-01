@@ -2,6 +2,10 @@
 
 API Documentation : https://documenter.getpostman.com/view/13692706/TVmLCy9U
 
-TO START
-`npm install`
-`npm start`
+## PREREQUISITES
+1. NodeJS 
+2. MongoDB
+
+## TO START
+* `npm install`
+* `npm start`
