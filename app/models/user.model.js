@@ -42,6 +42,27 @@ module.exports = mongoose => {
       }
     });
 
+    UserSchema.pre('findByIdAndUpdate', function(next) {
+      var user = this
+      console.log("masuk")
+
+      if(user.isModified('password')){
+        bcrypt.genSalt(salt,(err,salt) => {
+            if(err)return next(err);
+
+            bcrypt.hash(user.password,salt,(err,hash) => {
+                if(err) return next(err);
+                user.password=hash;
+                next();
+            })
+
+        })
+      }
+      else{
+          next();
+      }
+    });
+
     UserSchema.methods.comparepassword = function(password,cb)  {
         // var user = this
         console.log(password)
