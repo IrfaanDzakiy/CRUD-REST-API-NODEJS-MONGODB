@@ -7,7 +7,7 @@ API Documentation : https://documenter.getpostman.com/view/13692706/TVmLCy9U
 2. MongoDB
 
 ## USER CREDENTIAL
-Please manually add this credential via mongo cli/ mongo compass
+Please manually add this credential via mongo cli/ mongo compass before starting the app.
 ### ADMIN
 `{
     "_id": "5fc67323dd480504bc7d0a85",
